@@ -1,0 +1,353 @@
+﻿capital = 468
+
+#oob = "FFE_1936"
+
+# Starting tech
+set_technology = {
+	#Infantry
+	infantry_weapons = 1
+	#Support
+	#Artillery
+	gw_artillery = 1
+	#Armoured
+	#Land_Doctrine
+	#Navy
+	#Naval_Doctrine
+	#Airforce
+	early_fighter = 1
+	#Air_Doctrine
+	#Engineering
+	#Production
+}
+set_country_flag = monroe_doctrine
+
+1939.1.1 = {
+
+	add_political_power = 1250
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	#oob = "VEN_1939"
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_convoys = 8
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 5
+		}
+		
+		communism = {
+			popularity = 5
+			#banned = no #default is no
+		}
+
+		neutrality = {
+			popularity = 90
+	}	
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Davideslab"
+	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	expire = "1965.1.1"
+	ideology = depotism
+	traits = {
+		great_war_hero exiled
+	}
+}
+
+create_country_leader = {
+	name = "Napoleonicmaster"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "GFX_portrait_fra_maurice_thorez"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Justyou2005"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		inexperienced_imperialist
+	}
+}
+
+create_country_leader = {
+	name = "NBonaparte"
+	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	picture = "gfx/leaders/FFE/NBonaparte.dds"
+	expire = "1965.1.1"
+	ideology = depotism
+	traits = {
+		dictator warmonger
+	}
+}
+
+create_country_leader = {
+	name = "0ro22213"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		dislikes_germany
+	}
+}
+
+create_country_leader = {
+	name = "Airlanga"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		warrior_code
+	}
+}
+create_country_leader = {
+	name = "TheSuperThunderX2300"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		indomitable_perseverance
+	}
+}
+create_corps_commander = {
+	name = "Asurya3058"
+	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = {  career_officer ranger winter_specialist commando }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Connethink"
+	picture = "Portrait_France_Alphonse_Juin.dds"
+	traits = {  career_officer infantry_officer infantry_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Davideslab"
+	picture = "Portrait_France_Maurice_Gamelin.dds"
+	traits = {  old_guard war_hero reckless media_personality harsh_leader brilliant_strategist aggressive_doctrine fast_planner organization_first winter_specialist }
+	skill = 7
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "NBonaparte"
+	picture = "NBonaparte.dds"
+	traits = {  inflexible_strategist defensive_doctrine cautious organization_first thorough_planner charismatic skilled_staffer expert_delegator }
+	skill = 6
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Napoleonicmaster"
+	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
+	traits = {  old_guard cautious trickster skilled_staffer hill_fighter ranger adaptable defensive_doctrine }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "TheSuperThunderX2300"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	traits = {  old_guard war_hero infantry_officer inflexible_strategist organizer infantry_leader engineer commando infantry_expert ranger winter_specialist  }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Airlanga"
+	picture = "portrait_france_philippe_leclerc.dds"
+	traits = {  reckless cavalry_officer cavalry_leader commando cavalry_expert ranger }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Justyou2005"
+	picture = "portrait_france_henri_giraud.dds"
+	traits = {  cavalry_officer cavalry_leader ranger }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Rooooooiie"
+	picture = "portrait_france_charles_huntziger.dds"
+	traits = { old_guard infantry_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mondyz"
+	picture = "portrait_france_henri_giraud.dds"
+	traits = {  career_officer media_personaility infantry_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Grand_Marshall"
+	picture = "portrait_france_henri_giraud.dds"
+	traits = {  old_guard brilliant_strategist politically_connected cautious harsh_leader organizer trickster skilled_staffer improvisation_expert ranger winter_specialist }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+
+create_navy_leader = {
+	name = "Asurya3058"
+		picture = "Portrait_France_Francois_Darlan.dds"
+	traits = { superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Airlanga"
+		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mondyz"
+		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "NBonaparte"
+		picture = "Portrait_France_Rene-Emile_Godfroy.dds"
+	traits = { old_guard_navy spotter }
+	skill = 2
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 15
+			}
+
+			fascism = {
+				popularity = 15
+			}
+			
+			communism = {
+				popularity = 19
+				#banned = no #default is no
+			}
+
+			neutrality = {
+				popularity = 51
+			}
+		}
+		
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
